@@ -1,2 +1,2 @@
-# image-processing-4350
-Collaborative repository for UT Tyler class project (Image Processing 4350)
+# Image Processing Group Project
+Collaborative repository for UT Tyler class project (Image Processing 4350). Contains several basic image processing tools.
