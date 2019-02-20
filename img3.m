@@ -1,4 +1,6 @@
-im = imread("ImMammogramGS.tif");
+% Calculates and displays negative of 8-bit grayscale image.
+
+im = imread("ImMammogramGS.tif"); % filename hard-coded by teacher request
 neg_im = negative(im);
 
 clf;

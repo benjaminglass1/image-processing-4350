@@ -1,4 +1,6 @@
-im = imread("ImAerialGS.tif");
+% Displays an image with four different gammas
+
+im = imread("ImAerialGS.tif"); % filename hardcoded by teacher request
 [corrected3,corrected4,corrected5] = gamma_correction(im,3,4,5);
 
 clf;
@@ -16,9 +18,11 @@ imshow(corrected5)
 title("Gamma = 5.0")
 
 function [im1,im2,im3] = gamma_correction(x,gamma1,gamma2,gamma3)
+    % ensures that 255 is consistent between original and modified image
     c1 = 255/(255^gamma1);
     c2 = 255/(255^gamma2);
     c3 = 255/(255^gamma3);
+
     im1 = c1 * cast(x,'double').^gamma1;
     im1 = cast(round(im1),'uint8');
     im2 = c2 * cast(x,'double').^gamma2;
