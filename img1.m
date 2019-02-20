@@ -7,7 +7,7 @@ function [] = Chad_Test_LSBmodify()
 
 clf
 
-OriginalImage = imread('Img1GS.tif','tif');
+OriginalImage = imread('Img1GS.tif');
 
 %OriginalImage = im2double(OriginalImage);
 
