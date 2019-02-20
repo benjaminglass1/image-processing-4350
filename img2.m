@@ -2,7 +2,7 @@
 % grayscale plane.
 
 im = imread("ImgSkeleton.jpg"); % hard-coded filename by teacher request
-gray_im = rgb2gray(im);
+gray_im = rgb2gray(im); % original image is RGB-encoded grayscale; convert
 neg_im = 255 - gray_im;
 
 % Creates union of original image with grayscale plane at 127
